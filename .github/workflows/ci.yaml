@@ -1,0 +1,22 @@
+name: QuizProject
+on: push
+jobs:
+  execution_tests:
+    name: Install requirments and execut tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Update
+        run: sudo apt update
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - name: Install pip
+        run: sudo apt install python3-pip
+      - name: Install requirements
+        run: pip install -r requirements.txt
+      - name: Execute tests
+        env:
+          DJANGO_SETTINGS_MODULE:QuizProject.settings.local
+        run: pytest
+#
+
+
