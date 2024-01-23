@@ -1,7 +1,7 @@
 name: QuizProject
 on: push
 jobs:
-  execution_tests:
+  first:
     name: Install requirments and execut tests
     runs-on: ubuntu-latest
     steps:
