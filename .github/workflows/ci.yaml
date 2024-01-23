@@ -16,7 +16,8 @@ jobs:
       - name: Execute tests
         env:
           DJANGO_SETTINGS_MODULE:QuizProject.settings.local
-        run: pytest
+          SECRET_KEY = django-insecure-%r7j$wr1#-hwcfk^m81es@uw5xz@wfd-_s&ee5p)s$vl7iv54=
+        run: python manage.py test
 #
 
 
