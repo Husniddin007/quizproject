@@ -4,7 +4,7 @@ from .base import *
 # klrklg
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 # DATABASES = {
 #     "default": {

@@ -61,16 +61,4 @@ class TestQuizTypeView(TestCase):
 
         assert response.status_code == 400
 
-# class TestQuestionSerializer(TestCase):
-#     def SetUp(self):
-#         self.question = Question.objects.create(
-#             name="test_question",
-#              )
-#     def testdata1(self):
-#         serializer = QuestionSerializer(self.question).data
-#
-#         assert serializer['pk'] == self.question.pk
-#
-#
-
 

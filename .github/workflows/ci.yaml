@@ -39,7 +39,9 @@ jobs:
           SQL_PASSWORD: QuizProject124
           SQL_HOST: db
           SQL_PORT: 5432
-        run: python manage.py test
+        run:
+          python manage.py migrate
+          python manage.py test
 
 
 
