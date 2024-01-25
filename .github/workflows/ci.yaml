@@ -1,5 +1,11 @@
 name: QuizProject
-on: push
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
 jobs:
   first:
     name: Install requirments and execut tests
