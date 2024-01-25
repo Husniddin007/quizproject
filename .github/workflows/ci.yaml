@@ -40,6 +40,6 @@ jobs:
           SQL_HOST: db
           SQL_PORT: 5432
         run: python manage.py test
-#
+
 
 
