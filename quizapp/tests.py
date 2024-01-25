@@ -2,8 +2,8 @@ from django.test import TestCase
 from django.urls import reverse
 
 
-from  .models import QuizType
-from quizapp.api.v1.serializers import QuizTypeSerializer
+from  .models import QuizType,Question
+from quizapp.api.v1.serializers import QuizTypeSerializer,QuestionSerializer
 
 class TestQuizTypeSerializer(QuizTypeSerializer):
     def SetUp(self):
@@ -60,3 +60,17 @@ class TestQuizTypeView(TestCase):
         response = self.client.post(self.url, data=pyload)
 
         assert response.status_code == 400
+
+# class TestQuestionSerializer(TestCase):
+#     def SetUp(self):
+#         self.question = Question.objects.create(
+#             name="test_question",
+#              )
+#     def testdata1(self):
+#         serializer = QuestionSerializer(self.question).data
+#
+#         assert serializer['pk'] == self.question.pk
+#
+#
+
+
