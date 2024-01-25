@@ -34,10 +34,10 @@ jobs:
           DJANGO_SETTINGS_MODULE: QuizProject.settings.local
           SECRET_KEY: django-insecure-%r7j$wr1#-hwcfk^m81es@uw5xz@wfd-_s&ee5p)s$vl7iv54=
           SQL_ENGINE: django.db.backends.postgresql
-          SQL_DATABASE: quizdb
-          SQL_USER: postgresql
-          SQL_PASSWORD: QuizProject124
-          SQL_HOST: db
+          SQL_DATABASE: quizproject
+          SQL_USER: postgres
+          SQL_PASSWORD: 124
+          SQL_HOST: localhost
           SQL_PORT: 5432
         run: |
           python manage.py migrate
