@@ -95,7 +95,7 @@ class QuestionViewSet(viewsets.ModelViewSet):
     serializer_class = QuestionSerializer
     filter_backends = [filters.SearchFilter]
     search_fields = ['pk', 'name']
-
+# kdjiowjcoihw
     # def  get_queryset(self):
     #     qs = super().get_queryset()
     #     search = self.request.query_params.get('search')
