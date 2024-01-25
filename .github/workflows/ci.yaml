@@ -10,7 +10,7 @@ jobs:
   first:
     name: Install requirments and execut tests
     runs-on: ubuntu-latest
-    service:
+    services:
       db:
         image: postgres:15
         env:
